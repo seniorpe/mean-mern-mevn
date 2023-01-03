@@ -18,7 +18,7 @@ onBeforeUnmount(() => {
 });
 
 const logoUrl = computed(() => {
-    return `${contextPath}layout/images/${layoutConfig.darkTheme.value ? 'logo-white' : 'logo-dark'}.svg`;
+    return `${contextPath}layout/images/${layoutConfig.darkTheme.value ? 'vue-logo' : 'vue-logo'}.svg`;
 });
 
 const onTopBarMenuButton = () => {
@@ -64,7 +64,7 @@ const isOutsideClicked = (event) => {
     <div class="layout-topbar">
         <router-link to="/" class="layout-topbar-logo">
             <img :src="logoUrl" alt="logo" />
-            <span>SAKAI</span>
+            <span>MEVN</span>
         </router-link>
 
         <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
